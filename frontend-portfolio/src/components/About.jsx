@@ -1,6 +1,9 @@
 function About (){
 
-   return <div>
+   return <div style = {{
+    display:"flex",
+    justifyContent:"center"
+   }}>
         <h1>
             This is an about
         </h1>

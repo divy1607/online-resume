@@ -4,7 +4,9 @@ import viteLogo from '/vite.svg'
 import Appbar from "./components/Appbar.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
-import Contact from "./components/Contact.jsx";
+import Suggestion from "./components/Suggestion.jsx";
+import Divy from "./components/Divy.jsx"
+import Footer from "./components/Footer.jsx"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -14,7 +16,7 @@ function App() {
     <div style={{
       width: "100vw",
       height: "100vh",
-      backgroundColor: "#eeeeee"
+      backgroundColor: "#e5ff9e"
     }}
     >
 
@@ -23,8 +25,10 @@ function App() {
         <Routes>
           <Route path={"/home"} element={<Home />}></Route>
           <Route path={"/about"} element={<About />}></Route>
-          <Route path={"/contact"} element={<Contact />}></Route>
+          <Route path={"/suggestion"} element={<Suggestion />}></Route>
+          <Route path={"/"} element={<Divy />}></Route>
         </Routes>
+        <Footer></Footer>
       </Router>
 
     </div>
