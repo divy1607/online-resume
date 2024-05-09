@@ -6,7 +6,6 @@ import { Badge } from "@mui/material"
 function Footer() {
     return <div style={{
         display: "flex",
-        width: "500",
         position: "relative",
         justifyContent: "center",
         bottom: "0",

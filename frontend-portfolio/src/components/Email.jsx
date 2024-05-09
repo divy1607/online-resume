@@ -35,7 +35,7 @@ function ContactForm() {
         <Card varint={"outlined"} style={{ width: 400, padding: 20, marginTop: 30, height: "100%", marginRight: 30 }}>
             <h2>Contact me here, I will reply for sure</h2>
             <Typography> <p>Fill out the form:</p></Typography>
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} fullWidth>
                 <InputLabel>Name</InputLabel>
                 <Input type="name" name="name"></Input>
                 <br />
