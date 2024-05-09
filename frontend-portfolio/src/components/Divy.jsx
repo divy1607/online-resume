@@ -1,9 +1,20 @@
 function Divy() {
     return <div style={{
         display: "flex",
-        justifyContent: "center"
+        justifyContent: "left"
     }}>
-        <h1>This is the portfolio website of Divy</h1>
+       <div style = {{
+        display: "flex",
+        position: "relative",
+        top: "100px",
+        left: "50px",
+        fontSize: "50px",
+        fontFamily: "Arial",
+
+       }}>
+        </div> 
+        <br />
+        <h2> Introducing myself, what I do, how I do</h2>
     </div>
 }
 

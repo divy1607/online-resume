@@ -7,7 +7,7 @@ function Footer() {
     return <div style={{
         display: "flex",
         width: "500",
-        position: "absolute",
+        position: "relative",
         justifyContent: "center",
         bottom: "0",
         right: "50%",
