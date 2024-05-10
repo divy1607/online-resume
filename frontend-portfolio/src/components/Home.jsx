@@ -23,7 +23,7 @@ function Home() {
             }}>Hi, I'm <span style = {{color:"#00ffee", marginLeft: 20}}> Divyansh </span></h1>
             <h1 style = {{
                 display:"flex",
-                fontFamily: "Courier-new, courier, monospace",
+                fontFamily: "Monaco, monospace",
                 color: "00ffee"
             }}> <Typewriter
             options={{loop: true}}

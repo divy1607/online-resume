@@ -100,14 +100,17 @@ function App() {
         alignItems: "center",
         backgroundColor: "#ffffb0",
         backgroundImage: "linear-gradient(to bottom right, red, yellow)",
-        zIndex:-1
+        zIndex: -1
       }}>
         <Home></Home>
       </div>
 
       <div ref={abRef}
         style={{
-          backgroundColor: "green"
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundImage: "linear-gradient(to bottom right,#ceff1f, #2cf8ef)"
         }}>
         <About></About>
       </div>
