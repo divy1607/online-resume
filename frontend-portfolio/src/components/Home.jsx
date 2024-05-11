@@ -1,6 +1,5 @@
-import jokerPic from "../assets/joker.jpg";
+import divyPhoto from '../assets/c977b6ac-e9c2-40f6-835c-1ce07dc571ac.jpg';
 import React from 'react';
-import TextSwitcher from "./TextSwitcher.jsx";
 import Typewriter from "typewriter-effect";
 
 function Home() {
@@ -45,7 +44,7 @@ function Home() {
             padding: "20px"
 
         }}>
-            <img src={jokerPic} alt="" style={{
+            <img src={divyPhoto} alt="" style={{
                 width: 300,
                 height:"auto",
                 borderRadius: "50%",

@@ -1,11 +1,7 @@
-import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
-import Card from '@mui/material/Card';
 import Grid from '@mui/material/Grid';
-import { useNavigate } from "react-router-dom";
 import { Avatar } from '@mui/material';
 import divyPhoto from '../assets/c977b6ac-e9c2-40f6-835c-1ce07dc571ac.jpg';
-import Suggestion from "./Suggestion.jsx";
 
 
 function Appbar() {

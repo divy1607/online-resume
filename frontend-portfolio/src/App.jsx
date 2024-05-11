@@ -1,13 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Appbar from "./components/Appbar.jsx";
 import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import Suggestion from "./components/Suggestion.jsx";
 import Divy from "./components/Divy.jsx"
 import Footer from "./components/Footer.jsx"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useRef } from 'react';
 import Button from "@mui/material/Button";
 import Grid from '@mui/material/Grid';
@@ -20,6 +15,8 @@ function App() {
 
   const suggRef = useRef(null);
   const abRef = useRef(null);
+  const divRef = useRef(null);
+  const homeRef = useRef(null);
 
   const scrollToComponent = (ref) => {
     if (ref && ref.current) {
@@ -37,12 +34,13 @@ function App() {
     }}
     >
       <div style={{
-        backgroundColor: "rgba(255, 99, 71, 0.7)",
+        backgroundColor: "rgba(255, 99, 71, 0.2)",
         position: "fixed",
         width: "100%",
         top: 0,
         left: 0,
-        justifyContent: "space-between"
+        justifyContent: "space-between",
+        zIndex: 3
       }}>
         <nav>
           <Grid container>
@@ -57,14 +55,12 @@ function App() {
               </div>
             </Grid>
             <Grid item lg={4} md={4} sm={12}>
-              <div style={{
-                display: "flex",
-                justifyContent: "center"
+
+              <h1 style={{
+                textAlign: "center"
               }}>
-                <h2>
-                  THE WAY I AM
-                </h2>
-              </div>
+                THE WAY I AM
+              </h1>
             </Grid>
             <Grid item lg={4} md={4} sm={12}>
               <div style={{
@@ -74,6 +70,7 @@ function App() {
                 <div style={{ justifyContent: "right", marginRight: 10, display: "flex" }}>
                   <div style={{ marginRight: 10 }}>
                     <Button
+                      onClick={() => scrollToComponent(homeRef)}
                       variant={"text"}
                     > <h4>Home</h4></Button>
                   </div>
@@ -81,12 +78,19 @@ function App() {
                     <Button
                       onClick={() => scrollToComponent(abRef)}
                       variant={"text"}
-                    > <h4>About</h4></Button>
+                    > <h4>Projects</h4></Button>
                   </div>
+                  <div style={{ marginRight: 10 }}>
+                    <Button
+                      onClick={() => scrollToComponent(divRef)}
+                      variant={"text"}
+                    > <h4>Education</h4></Button>
+                  </div>
+
                   <Button
                     variant={"text"}
                     onClick={() => scrollToComponent(suggRef)}
-                  > <h4>Suggestion</h4></Button>
+                  > <h4>Contact me </h4></Button>
                 </div>
               </div>
             </Grid>
@@ -94,14 +98,15 @@ function App() {
         </nav>
       </div>
       <br /><br />
-      <div style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#ffffb0",
-        backgroundImage: "linear-gradient(to bottom right, red, yellow)",
-        zIndex: -1
-      }}>
+      <div ref={homeRef}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "#ffffb0",
+          backgroundImage: "linear-gradient(to bottom right, red, yellow)",
+          zIndex: -1
+        }}>
         <Home></Home>
       </div>
 
@@ -115,15 +120,16 @@ function App() {
         <About></About>
       </div>
 
-      <div style={{
-        backgroundColor: "purple"
-      }}>
+      <div ref={divRef}
+        style={{
+          backgroundImage: "linear-gradient(to bottom right,#ffffa9,#ee82ee)",
+        }}>
         <Divy></Divy>
       </div>
       <div ref={suggRef}
         style={{
           backgroundColor: "yellow",
-          height: 1000
+          height: 600
         }}
       >
         <Suggestion></Suggestion>
