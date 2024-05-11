@@ -9,8 +9,6 @@ function Footer() {
         position: "relative",
         justifyContent: "center",
         bottom: "0",
-        right: "50%",
-        left: "50%"
     }}>
         <div style={{
             display: "flex",

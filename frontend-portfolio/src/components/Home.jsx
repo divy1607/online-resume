@@ -15,15 +15,15 @@ function Home() {
             width: 200
         }}>
             <h1 style = {{
-                display: "flex",
                 fontSize: "4rem",
                 fontFamily: "Georgia, serif",
-                fontWeight: "bold"
+                fontWeight: "bold",
+                textAlign: "center"
             }}>Hi, I'm <span style = {{color:"#00ffee", marginLeft: 20}}> Divyansh </span></h1>
             <h1 style = {{
-                display:"flex",
                 fontFamily: "Monaco, monospace",
-                color: "00ffee"
+                color: "00ffee",
+                textAlign: "center"
             }}> <Typewriter
             options={{loop: true}}
             onInit={(typewriter)=>{
@@ -31,9 +31,8 @@ function Home() {
             }} 
             /></h1>
             <h3 style = {{
-                display: "flex",
                 fontFamily: "Georgia, serif",
-                fontWeight: "bold"
+                fontWeight: "bold",
             }}>A tech head, exploring the realms of science and technology Welcome to my portfolio! I like working on simple solutions to complex problems. You will most probably find me sleeping, watching cool physics stuff online, watching american sitcoms or programming.</h3>
         </div>
         <div style={{

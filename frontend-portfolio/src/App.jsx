@@ -1,13 +1,13 @@
 import Home from "./components/Home.jsx";
-import About from "./components/About.jsx";
-import Suggestion from "./components/Suggestion.jsx";
-import Divy from "./components/Divy.jsx"
+import Projects from "./components/Projects.jsx";
+import Contact from "./components/Contact.jsx";
+import Education from "./components/Education.jsx"
 import Footer from "./components/Footer.jsx"
 import { useRef } from 'react';
 import Button from "@mui/material/Button";
 import Grid from '@mui/material/Grid';
 import { Avatar } from '@mui/material';
-import divyPhoto from './assets/c977b6ac-e9c2-40f6-835c-1ce07dc571ac.jpg';
+import jokerPic from './assets/joker.jpg';
 
 
 
@@ -30,7 +30,6 @@ function App() {
       backgroundColor: "#e5ff9e",
       top: 0,
       left: 0,
-      right: 0
     }}
     >
       <div style={{
@@ -42,15 +41,18 @@ function App() {
         justifyContent: "space-between",
         zIndex: 3
       }}>
-        <nav>
+        <nav style={{
+          top: 0
+        }}>
           <Grid container>
             <Grid item lg={4} md={4} sm={12}>
 
               <div style={{ marginLeft: 10 }} >
                 <Button
                   variant={"text"}
+                  onClick={() => scrollToComponent(homeRef)}
                 > <Avatar alt="Divy"
-                  src={divyPhoto}
+                  src={jokerPic}
                   sx={{ width: 56, height: 56 }} /> </Button>
               </div>
             </Grid>
@@ -68,12 +70,6 @@ function App() {
                 justifyContent: "right",
               }}>
                 <div style={{ justifyContent: "right", marginRight: 10, display: "flex" }}>
-                  <div style={{ marginRight: 10 }}>
-                    <Button
-                      onClick={() => scrollToComponent(homeRef)}
-                      variant={"text"}
-                    > <h4>Home</h4></Button>
-                  </div>
                   <div style={{ marginRight: 10 }}>
                     <Button
                       onClick={() => scrollToComponent(abRef)}
@@ -115,26 +111,37 @@ function App() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          backgroundImage: "linear-gradient(to bottom right,#ceff1f, #2cf8ef)"
+          backgroundImage: "linear-gradient(to bottom right,#ceff1f, #2cf8ef)",
+          top: 0,
+          left: 0
         }}>
-        <About></About>
+        <Projects />
       </div>
 
       <div ref={divRef}
         style={{
           backgroundImage: "linear-gradient(to bottom right,#ffffa9,#ee82ee)",
+          top: 0,
+          left: 0
         }}>
-        <Divy></Divy>
+        <Education />
       </div>
       <div ref={suggRef}
         style={{
-          backgroundColor: "yellow",
-          height: 600
+          backgroundImage: "linear-gradient(to bottom right,#7fff47,#7fffff)",
+          height: 650,
+          top: 0,
+          left: 0
         }}
       >
-        <Suggestion></Suggestion>
+        <Contact />
       </div>
-      <div>
+      <div style={{
+        backgroundColor: "#c7d4cd",
+        overflowX: "hidden",
+        top: 0,
+        left: 0
+      }}>
         <Footer></Footer>
       </div>
 
