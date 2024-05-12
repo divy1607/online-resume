@@ -75,18 +75,20 @@ function App() {
                     <Button
                       onClick={() => scrollToComponent(abRef)}
                       variant={"text"}
+                      color="secondary"
                     > <h4>Projects</h4></Button>
                   </div>
                   <div style={{ marginRight: 10 }}>
                     <Button
                       onClick={() => scrollToComponent(divRef)}
                       variant={"text"}
+                      color="secondary"
                     > <h4>Education</h4></Button>
                   </div>
-
                   <Button
                     variant={"text"}
                     onClick={() => scrollToComponent(suggRef)}
+                    color="secondary"
                   > <h4>Contact me </h4></Button>
                 </div>
               </div>
