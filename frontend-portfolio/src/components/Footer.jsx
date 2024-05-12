@@ -1,6 +1,7 @@
 import fbPic from "../assets/facebook.png"
 import gitPic from "../assets/github-mark.png"
 import linkedPic from "../assets/icons8-linkedin-50.png"
+import xPic from "../assets/x.png";
 import { Badge } from "@mui/material"
 
 function Footer() {
@@ -24,8 +25,13 @@ function Footer() {
                     <Git />
                 </Badge>
             </div>
+            <div style={{ marginRight: 30 }}>
+                <Badge color="secondary">
+                    <LinkedIn />
+                </Badge>
+            </div>
             <Badge color="secondary">
-                <LinkedIn />
+                <X />
             </Badge>
         </div>
 
@@ -34,20 +40,27 @@ function Footer() {
 }
 
 function Facebook() {
-    return <a href="https://www.facebook.com/profile.php?id=100018304062168"><img src={fbPic} alt="instagram" style={{
+    return <a href="https://www.facebook.com/profile.php?id=100018304062168"><img src={fbPic} alt="Facebook" style={{
         width: '30px', height: 'auto'
     }} /></a>
 }
 
 function Git() {
-    return <a href="https://github.com/divy1607"><img src={gitPic} alt="instagram" style={{
+    return <a href="https://github.com/divy1607"><img src={gitPic} alt="GitHub" style={{
         width: '30px', height: 'auto'
     }} /></a>
 }
 
 function LinkedIn() {
-    return <a href="https://www.linkedin.com/in/divyansh-tripathi-7a1141242/"><img src={linkedPic} alt="instagram" style={{
+    return <a href="https://www.linkedin.com/in/divyansh-tripathi-7a1141242/"><img src={linkedPic} alt="linkedIn" style={{
         width: '30px', height: 'auto'
     }} /></a>
 }
+
+function X() {
+    return <a href="https://twitter.com/sadandmad101"><img src={xPic} alt="twitter" style={{
+        width: '30px', height: 'auto'
+    }} /></a>
+}
+
 export default Footer

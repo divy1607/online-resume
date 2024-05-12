@@ -36,11 +36,13 @@ function ContactForm() {
             verticalAlign: "baseline"
         }}>
             <h1 style={{
-                fontSize: "3em",
-                textAlign: "center"
-            }}>Let's Talk</h1>
+                fontSize: "2em",
+                textAlign: "center",
+                fontFamily: "Copperplate, Papyrus, fantasy"
+            }}>LET'S TALK</h1>
             <h2 style={{
-                textAlign: "center"
+                textAlign: "center",
+                fontFamily: "Geneva, Verdana, sans-serif"
             }}>Drop me a message</h2>
             <form ref={form} onSubmit={sendEmail} fullWidth>
                 <InputLabel >Name</InputLabel>
@@ -85,7 +87,7 @@ function ContactForm() {
                     variant={"contained"}
                     type="submit"
                 >
-                    let us talk
+                    send
 
                 </Button>
             </form>

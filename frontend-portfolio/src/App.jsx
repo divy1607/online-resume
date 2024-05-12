@@ -59,8 +59,9 @@ function App() {
             <Grid item lg={4} md={4} sm={12}>
 
               <h1 style={{
-                textAlign: "center"
-              }}>
+                textAlign: "center",
+                fontFamily: "Copperplate, Papyrus, fantasy"
+                }}>
                 THE WAY I AM
               </h1>
             </Grid>
@@ -100,7 +101,7 @@ function App() {
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: "#ffffb0",
-          backgroundImage: "linear-gradient(to bottom right, red, yellow)",
+          backgroundImage: "linear-gradient(to bottom right,#ceffff, #ce85ff)",
           zIndex: -1
         }}>
         <Home></Home>

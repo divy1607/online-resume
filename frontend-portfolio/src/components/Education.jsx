@@ -7,11 +7,13 @@ function Education() {
         <>
             <h1 style={{
                 textAlign: "center",
-                fontSize: "4em"
-            }}>Education</h1>
+                fontSize: "3em",
+                fontFamily: "Copperplate, Papyrus, fantasy"
+            }}>EDUCATION</h1>
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#7FFFD4', color: '#fff' }}
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     date="2017-18"
                     style={{
@@ -22,16 +24,14 @@ function Education() {
                     }}> Senior Secondary Certificate </h1>
                     <h2 style={{
                         textAlign: "center"
-                    }}> RPM Academy</h2>
+                    }}>  Central Board of Secondary Education</h2>
                     <h3 style={{
                         textAlign: "center"
-                    }}> Central Board of Secondary Education</h3>
-                    <h4 style={{
-                        textAlign: "center"
-                    }}>93.6%</h4>
+                    }}>93.6%</h3>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#7FFFD4', color: '#fff' }}
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     date="2019-20"
                     style={{
@@ -42,16 +42,14 @@ function Education() {
                     }}> Higher Secondary Certificate </h1>
                     <h2 style={{
                         textAlign: "center"
-                    }}> RPM Academy</h2>
+                    }}> Central Board of Secondary Education</h2>
                     <h3 style={{
                         textAlign: "center"
-                    }}> Central Board of Secondary Education</h3>
-                    <h4 style={{
-                        textAlign: "center"
-                    }}>92%</h4>
+                    }}>92%</h3>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
+                    contentStyle={{ background: '#7FFFD4', color: '#fff' }}
                     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                     date="2021-present"
                     style={{
