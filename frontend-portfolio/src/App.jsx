@@ -113,8 +113,6 @@ function App() {
           justifyContent: "center",
           alignItems: "center",
           backgroundImage: "linear-gradient(to bottom right,#ceff1f, #2cf8ef)",
-          top: 0,
-          left: 0
         }}>
         <Projects />
       </div>
@@ -122,8 +120,6 @@ function App() {
       <div ref={divRef}
         style={{
           backgroundImage: "linear-gradient(to bottom right,#ffffa9,#ee82ee)",
-          top: 0,
-          left: 0
         }}>
         <Education />
       </div>
@@ -131,8 +127,6 @@ function App() {
         style={{
           backgroundImage: "linear-gradient(to bottom right, #bcd7fc, #e2eb77)",
           height: 650,
-          top: 0,
-          left: 0
         }}
       >
         <Contact />

@@ -38,11 +38,12 @@ function ContactForm() {
             <h1 style={{
                 fontSize: "2em",
                 textAlign: "center",
-                fontFamily: "Copperplate, Papyrus, fantasy"
+                fontFamily: "Copperplate, Copperplate Gothic Light, fantasy"
             }}>LET'S TALK</h1>
             <h2 style={{
                 textAlign: "center",
-                fontFamily: "Geneva, Verdana, sans-serif"
+                fontFamily: "Geneva, Verdana, sans-serif",
+                marginBottom: 20
             }}>Drop me a message</h2>
             <form ref={form} onSubmit={sendEmail} fullWidth>
                 <InputLabel >Name</InputLabel>
