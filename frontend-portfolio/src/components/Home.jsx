@@ -14,7 +14,8 @@ function Home() {
             alignItems: "baseline",
             flexDirection: "column",
             alignContent: "center",
-            width: 200
+            width: 200,
+            marginLeft: 50
         }}>
             <h1 style={{
                 fontSize: "4rem",
@@ -33,10 +34,10 @@ function Home() {
                     }}
                 /></h1>
             <h3 style={{
-                fontFamily: "Georgia, serif",
+                fontFamily: "Recoleta, serif",
                 fontWeight: "bold",
-            }}>A tech head, exploring the realms of science and technology Welcome to my portfolio! I like working on simple solutions to complex problems. You will most probably find me sleeping, watching cool physics stuff online, watching american sitcoms or programming.</h3>
-            <h3>Let's connect <Badge color="secondary">
+            }}>A tech head, exploring the realms of science and technology. <br />Welcome to my portfolio! You'll see my self projects and educational background here. <br /> Apart from that, I like working on simple solutions to complex problems. You will most probably find me sleeping, watching cool physics stuff online, watching american sitcoms or programming. Can help you with designs, codes and physics, or can recommend great shows and music. <br /> <h5>(PS: I think my taste in music is great! :p) </h5> </h3>
+            <h3 style={{fontFamily: "Georgia, serif", fontWeight: "bold"}}>Let's connect <Badge color="secondary">
                 <LinkedIn />
             </Badge></h3>
         </div>
@@ -62,7 +63,7 @@ function Home() {
 }
 
 function LinkedIn() {
-    return <a href="https://www.linkedin.com/in/divyansh-tripathi-7a1141242/"><img src={linkedPic} alt="linkedIn" style={{
+    return <a href="https://www.linkedin.com/in/divyansh-tripathi-7a1141242/" target='_blank'><img src={linkedPic} alt="linkedIn" style={{
         width: '30px', height: 'auto'
     }} /></a>
 }

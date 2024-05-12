@@ -8,7 +8,7 @@ function Education() {
             <h1 style={{
                 textAlign: "center",
                 fontSize: "3em",
-                fontFamily: "Copperplate, Papyrus, fantasy"
+                fontFamily: "Copperplate, Copperplate Gothic Light, fantasy"
             }}>EDUCATION</h1>
             <VerticalTimeline>
                 <VerticalTimelineElement

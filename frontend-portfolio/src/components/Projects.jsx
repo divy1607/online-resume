@@ -62,14 +62,14 @@ function Projects() {
             <h1 style={{
                 fontSize: "3em",
                 textAlign: "center",
-                fontFamily: "Brush Script Mt, cursive"
+                fontFamily: "Copperplate, Copperplate Gothic Light, fantasy"
             }}>
-                projects
+                PROJECTS
             </h1>
-            Gi
             <div style={{
                 display: "flex",
-                justifyContent: "space-around"
+                justifyContent: "space-around",
+                marginTop: 30
             }}>
                 <div style={{
                     
@@ -104,7 +104,7 @@ function Projects() {
                                 />
                             )
                         }
-                        <a href="https://github.com/divy1607/react-todo-app"> <h3 style={{ textAlign: "center", fontFamily: "Monaco, monospace" }}>source code</h3></a>
+                        <a href="https://github.com/divy1607/react-todo-app" target="_blank"> <h3 style={{ textAlign: "center", fontFamily: "Monaco, monospace" }}>source code</h3></a>
                     </Card>
                     <Card
                         onMouseEnter={handdleMouseEnter}
@@ -117,7 +117,7 @@ function Projects() {
                             fontFamily: "Trebuchet MS, sans-serif"
                         }}>E Commerce Dashboard *</h1>
                         <img src={ecomPic} alt="" style={{ width: 500, height: "auto" }} />
-                        <a href="https://github.com/divy1607/next"> <h3 style={{ textAlign: "center", fontFamily: "Monaco, monospace" }}>source code</h3></a>
+                        <a href="https://github.com/divy1607/next" target="_blank"> <h3 style={{ textAlign: "center", fontFamily: "Monaco, monospace" }}>source code</h3></a>
                     </Card>
                 </div>
                 <div style={{
@@ -153,7 +153,7 @@ function Projects() {
                                 />
                             )
                         }
-                        <a href="https://github.com/divy1607/react-course-app"> <h3 style={{ textAlign: "center", fontFamily: "Monaco, monospace" }}>source code</h3></a>
+                        <a href="https://github.com/divy1607/react-course-app" target="_blank"> <h3 style={{ textAlign: "center", fontFamily: "Monaco, monospace" }}>source code</h3></a>
                     </Card>
                     <Card
                         onMouseEnter={handdddleMouseEnter}
@@ -166,11 +166,11 @@ function Projects() {
                             fontFamily: "Trebuchet MS, sans-serif"
                         }}>Calculator App *</h1>
                         <img src={calcPic} alt="" style={{ width: 500, height: "auto" }} />
-                        <a href="https://github.com/divy1607/simple-calculator-app"> <h3 style={{ textAlign: "center", fontFamily: "Monaco, monospace" }}>source code</h3></a>
+                        <a href="https://github.com/divy1607/simple-calculator-app" target="_blank"> <h3 style={{ textAlign: "center", fontFamily: "Monaco, monospace" }}>source code</h3></a>
                     </Card>
                 </div>
             </div>
-            <h6 style={{ fontFamily: "Courier, monospace", textAlign: "center" }}>*these projects were build on another OS so video demonstration is not possible, you can checkout the soruce code anyways :D</h6>
+            <h6 style={{ fontFamily: "Courier, monospace", textAlign: "center" }}>*these projects were built on another OS so video demonstration is not possible, you can checkout the soruce code anyways :D</h6>
             <br />
             <h1 style={{
                 textAlign: "center",

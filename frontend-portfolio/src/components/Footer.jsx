@@ -40,25 +40,25 @@ function Footer() {
 }
 
 function Facebook() {
-    return <a href="https://www.facebook.com/profile.php?id=100018304062168"><img src={fbPic} alt="Facebook" style={{
+    return <a href="https://www.facebook.com/profile.php?id=100018304062168" target="_blank"><img src={fbPic} alt="Facebook" style={{
         width: '30px', height: 'auto'
     }} /></a>
 }
 
 function Git() {
-    return <a href="https://github.com/divy1607"><img src={gitPic} alt="GitHub" style={{
+    return <a href="https://github.com/divy1607" target="_blank"><img src={gitPic} alt="GitHub" style={{
         width: '30px', height: 'auto'
     }} /></a>
 }
 
 function LinkedIn() {
-    return <a href="https://www.linkedin.com/in/divyansh-tripathi-7a1141242/"><img src={linkedPic} alt="linkedIn" style={{
+    return <a href="https://www.linkedin.com/in/divyansh-tripathi-7a1141242/" target="_blank"><img src={linkedPic} alt="linkedIn" style={{
         width: '30px', height: 'auto'
     }} /></a>
 }
 
 function X() {
-    return <a href="https://twitter.com/sadandmad101"><img src={xPic} alt="twitter" style={{
+    return <a href="https://twitter.com/sadandmad101" target="_blank"><img src={xPic} alt="twitter" style={{
         width: '30px', height: 'auto'
     }} /></a>
 }

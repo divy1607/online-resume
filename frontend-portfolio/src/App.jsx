@@ -27,9 +27,7 @@ function App() {
     <div style={{
       width: "100vw",
       height: "100vh",
-      backgroundColor: "#e5ff9e",
-      top: 0,
-      left: 0,
+     
     }}
     >
       <div style={{
@@ -60,7 +58,7 @@ function App() {
 
               <h1 style={{
                 textAlign: "center",
-                fontFamily: "Copperplate, Papyrus, fantasy"
+                fontFamily: "Copperplate, Copperplate Gothic Light, fantasy"
                 }}>
                 THE WAY I AM
               </h1>
@@ -102,9 +100,9 @@ function App() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          backgroundColor: "#ffffb0",
           backgroundImage: "linear-gradient(to bottom right,#ceffff, #ce85ff)",
-          zIndex: -1
+          zIndex: -1,
+          marginTop: 30
         }}>
         <Home></Home>
       </div>
@@ -131,7 +129,7 @@ function App() {
       </div>
       <div ref={suggRef}
         style={{
-          backgroundImage: "linear-gradient(to bottom right,#7fff47,#7fffff)",
+          backgroundImage: "linear-gradient(to bottom right, #bcd7fc, #e2eb77)",
           height: 650,
           top: 0,
           left: 0
@@ -140,7 +138,7 @@ function App() {
         <Contact />
       </div>
       <div style={{
-        backgroundColor: "#c7d4cd",
+        backgroundImage: "linear-gradient(to bottom right, #3c3c3c, #f0f0f0)",
         overflowX: "hidden",
         top: 0,
         left: 0
