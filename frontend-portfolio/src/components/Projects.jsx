@@ -62,9 +62,9 @@ function Projects() {
             <h1 style={{
                 fontSize: "3em",
                 textAlign: "center",
-                fontFamily: "Copperplate, Papyrus, fantasy"
+                fontFamily: "Brush Script Mt, cursive"
             }}>
-                PROJECTS
+                projects
             </h1>
             Gi
             <div style={{
